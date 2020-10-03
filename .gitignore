@@ -70,3 +70,7 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 Pasco/Temp/UnityLockfile
+*.uxml
+*.uxml
+Pasco/Temp/UnityTempFile-2bf36386ff2bfa34b83a01cea218b125
+Pasco/Temp/UnityTempFile-3cf295d8d49cbd14b8df823b5c2eabfe
