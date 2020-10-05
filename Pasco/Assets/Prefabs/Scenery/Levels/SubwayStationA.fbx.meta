@@ -7,13 +7,23 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: UV10
+    second: {fileID: 2100000, guid: 37ef8d5f0a2c35b45af8072e12e633a0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: UV_003
+    second: {fileID: 2100000, guid: ddeda78d2e77fe644a6cb17f512a0ae2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: UV_05
-    second: {fileID: 2100000, guid: 1c4094948685da445aae704017d1c0f0, type: 2}
+    second: {fileID: 2100000, guid: 94836ba17f51a2d4b9e72f2dca19ad51, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: UV_07
-    second: {fileID: 2100000, guid: 9541cb38bda996c4793f7b419e9a772a, type: 2}
+    second: {fileID: 2100000, guid: 71e4ce836940861479261c4ad7aa43e8, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
