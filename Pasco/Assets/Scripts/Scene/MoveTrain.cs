@@ -22,7 +22,7 @@ public class MoveTrain : MonoBehaviour
     void Start()
     {
         // Keep a note of the time the movement started.
-        
+        comingTrain = gameObject.GetComponent<AudioSource>();
 
         // Calculate the journey length.
         journeyLength = Vector3.Distance(startMarker.position, endMarker.position);
