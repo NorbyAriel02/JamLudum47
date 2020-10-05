@@ -38,7 +38,7 @@ public class MaquinaBoleteriaCodigo : MonoBehaviour
     void BtnExit()
     {
         panel.SetActive(false);
-        Cursor.visible = !Cursor.visible;
+        Cursor.visible = false;
     }
     void Update()
     {        
@@ -47,7 +47,7 @@ public class MaquinaBoleteriaCodigo : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 panel.SetActive(true);
-                Cursor.visible = !Cursor.visible;
+                Cursor.visible = true;
             }
         }        
         
@@ -63,8 +63,7 @@ public class MaquinaBoleteriaCodigo : MonoBehaviour
     {
         //Si es el personaje el que esta en la escalerilla
         if (other.gameObject.tag.Equals("Player"))
-        {
-            Debug.Log("PLayer llego");
+        {            
             AccionaTablero = true;
         }
     }
@@ -72,8 +71,7 @@ public class MaquinaBoleteriaCodigo : MonoBehaviour
     void OnTriggerExit(Collider other)
     {
         if (other.gameObject.tag.Equals("Player"))
-        {
-            Debug.Log("PLayer salio");
+        {            
             AccionaTablero = false;
         }
     }

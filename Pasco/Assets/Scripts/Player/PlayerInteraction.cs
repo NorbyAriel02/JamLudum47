@@ -46,7 +46,7 @@ public class PlayerInteraction : MonoBehaviour
 
     public void AddObjectToList(string value, int index)
     {
-        uic.ShowMsj("Has recogido " + value);
+        uic.ShowMsj("You picked up " + value);
         ListaDeProd.Add(index, value);
         foreach(GameObject go in recolectables)
         {
@@ -70,7 +70,7 @@ public class PlayerInteraction : MonoBehaviour
 
     public void AddNoteToList(string value, int indexNote)
     {
-        uic.ShowMsj("Has recogido una Nota");
+        uic.ShowMsj("You picked up a note");
         goListaDeNotas[indexNote].gameObject.SetActive(true);
         ListaDeNotas.Add(indexNote, value);
     }

@@ -18,8 +18,7 @@ public class LoadScene : MonoBehaviour
     }
 
     void OnTriggerEnter(Collider other)
-    {
-        Debug.Log("Subio el player");
+    {        
         //Si es el personaje el que esta en la escalerilla
         if (other.gameObject.tag.Equals("Player"))
         {

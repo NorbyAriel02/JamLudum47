@@ -6,8 +6,7 @@ using UnityEditor.PackageManager.UI;
 
 public class UIController : MonoBehaviour
 {
-    public Text textMsj;
-    public GameObject cursor;
+    public Text textMsj;    
     public Text TxtNota;
     public float timer = 5;
     float delay = 0;

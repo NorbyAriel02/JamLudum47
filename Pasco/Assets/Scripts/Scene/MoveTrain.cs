@@ -7,6 +7,8 @@ public class MoveTrain : MonoBehaviour
     // Transforms to act as start and end markers for the journey.
     public Transform startMarker;
     public Transform endMarker;
+	private AudioSource comingTrain;
+	public AudioClip subwayEnter;
 
     // Movement speed in units per second.
     public float speed = 1.0F;
@@ -20,7 +22,7 @@ public class MoveTrain : MonoBehaviour
     void Start()
     {
         // Keep a note of the time the movement started.
-        
+        comingTrain = gameObject.GetComponent<AudioSource>();
 
         // Calculate the journey length.
         journeyLength = Vector3.Distance(startMarker.position, endMarker.position);
@@ -48,6 +50,7 @@ public class MoveTrain : MonoBehaviour
         {
             elTrenViene = true;
             startTime = Time.time;
+			comingTrain.PlayOneShot(subwayEnter);
         }        
     }
 }

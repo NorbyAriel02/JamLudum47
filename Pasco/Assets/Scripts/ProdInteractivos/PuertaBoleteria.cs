@@ -6,7 +6,8 @@ public class PuertaBoleteria : MonoBehaviour
 {
     public int numeroPuzzle = 0;
     public PlayerInteraction pi;
-    public GameObject puerta;
+    public GameObject Close;
+    public GameObject open;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +24,8 @@ public class PuertaBoleteria : MonoBehaviour
     {
         if(pi.ContainsKey(numeroPuzzle) && Input.GetKeyDown(KeyCode.E))
         {
-            Destroy(puerta);
+            Destroy(Close);
+            open.SetActive(true);
         }
     }
 
