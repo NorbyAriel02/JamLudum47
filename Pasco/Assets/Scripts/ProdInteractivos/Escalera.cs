@@ -4,46 +4,51 @@ using UnityEngine;
 
 public class Escalera : MonoBehaviour
 {
-    public float velocidadSubida = 5f;
-    bool DentroEscalerilla = false;
-    public Transform playerPositiom;
-    public CharacterController cc;
-    public Vector3 addZ;
+    public Vector3 addDeltaZ;    
+    bool inPosition = false;    
+    private CharacterController cc;
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+        cc = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterController>();
     }
 
     // Update is called once per frame
     void Update()
-    {
-        Vector3 movimiento = new Vector3(0, velocidadSubida * Time.deltaTime, 0);
-        if (DentroEscalerilla == true)
+    {        
+        if (inPosition)
         {
             if (Input.GetKey(KeyCode.W))
             {
-                cc.Move(addZ * Time.fixedDeltaTime);                
+                cc.Move(addDeltaZ * Time.fixedDeltaTime);                
             }
         }
-        else
-            cc.enabled = true;
     }
 
     void OnTriggerEnter(Collider other)
     {
         //Si es el personaje el que esta en la escalerilla
-        if (other.gameObject.tag.Equals("cuerpo"))
+        if (other.gameObject.tag.Equals("Player"))
         {
-            DentroEscalerilla = true;
+            inPosition = true;
         }
     }
 
+    private void OnTriggerStay(Collider other)
+    {
+        //Si es el personaje el que esta en la escalerilla
+        if (other.gameObject.tag.Equals("Player"))
+        {            
+            inPosition = true;
+        }
+    }
+    
     void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag.Equals("cuerpo"))
+        if (other.gameObject.tag.Equals("Player"))
         {
-            DentroEscalerilla = false;
+            inPosition = false;
         }
     }
 }

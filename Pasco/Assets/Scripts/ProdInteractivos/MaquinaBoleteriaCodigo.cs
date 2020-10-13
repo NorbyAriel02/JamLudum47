@@ -4,17 +4,20 @@ using UnityEngine;
 
 
 public class MaquinaBoleteriaCodigo : MonoBehaviour
-{
-    public MoveTrain mt;
-    public GameObject trigger;
+{        
     public GameObject panel;
     public List<Button> listaBotenes;
     public Text txtCodigo;
     public string Codigo;
-    bool AccionaTablero;
-    // Start is called before the first frame update
+
+
+    private bool AccionaTablero;    
+    private MoveTrain moveTrain;
+    private GameObject trigger;
+    private Player player;
+    
     void Start()
-    {
+    {        
         for(int x = 0; x <= 9; x++)
         {
             string value = x.ToString();
@@ -23,6 +26,9 @@ public class MaquinaBoleteriaCodigo : MonoBehaviour
         listaBotenes[10].onClick.AddListener(BtnDelete);
         listaBotenes[11].onClick.AddListener(BtnExit);
         panel.SetActive(false);
+        trigger = GameObject.FindGameObjectWithTag("LOADSCENE");
+        moveTrain = GameObject.FindGameObjectWithTag("TRAIN").GetComponent<MoveTrain>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
     }
     void BtnAdd(string value)
     {
@@ -38,41 +44,39 @@ public class MaquinaBoleteriaCodigo : MonoBehaviour
     void BtnExit()
     {
         panel.SetActive(false);
-        Cursor.visible = false;
+        player.ClosePanel();
     }
     void Update()
-    {        
-        if (AccionaTablero)
-        {
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                panel.SetActive(true);
-                Cursor.visible = true;
-            }
-        }        
+    {
+        if (!AccionaTablero)
+            panel.SetActive(false);
         
         if(Codigo.Equals(txtCodigo.text.Trim()))
         {
-            trigger.SetActive(true);
-            mt.LlamarTren();
+            trigger.GetComponent<BoxCollider>().enabled = true;
+            moveTrain.LlamarTren();
             panel.SetActive(false);
+            player.ClosePanel();
         }
     }
 
-    void OnTriggerEnter(Collider other)
+    
+    private void OnTriggerStay(Collider other)
     {
-        //Si es el personaje el que esta en la escalerilla
-        if (other.gameObject.tag.Equals("Player"))
-        {            
+        if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.E))
+        {
             AccionaTablero = true;
+            panel.SetActive(true);
+            player.OpenPanel();
         }
     }
-
     void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag.Equals("Player"))
+        if (other.CompareTag("Player"))
         {            
             AccionaTablero = false;
+            player.ClosePanel();
+            panel.SetActive(false);
         }
     }
 }

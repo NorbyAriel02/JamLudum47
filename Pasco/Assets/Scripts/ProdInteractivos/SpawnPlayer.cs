@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class SpawnPlayer : MonoBehaviour
 {
-    public Image eyes;
-    public GameObject player;
-    public GameObject spawn;
+    public Transform spawn;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,27 +18,25 @@ public class SpawnPlayer : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        //if (other.gameObject.tag.Equals("Player"))
-        //{
-        //    player.transform.position = spawn.transform.position;
-        //}
+        
     }
     private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag.Equals("Player"))
         {
-            player.GetComponent<CharacterController>().enabled = false;
-            player.transform.position = spawn.transform.position;            
-            player.GetComponent<CharacterController>().enabled = true;
-            OffLigth(other);
+            other.GetComponent<CharacterController>().enabled = false;
+            other.transform.position = spawn.position;            
+            other.GetComponent<CharacterController>().enabled = true;
+            TurnOffTheLight(other);
         }
     }
 
-    void OffLigth(Collider other)
+    void TurnOffTheLight(Collider other)
     {
-        other.gameObject.GetComponent<OpenEyes>().close = true;
+        other.gameObject.GetComponentInChildren<OpenEyes>().close = true;
         Color off = new Color(0, 0, 0, 1);
-        eyes.color = off;
+        GameObject eyes = GameObject.FindGameObjectWithTag("EYES");
+        eyes.GetComponent<Image>().color = off;
     }
 
 }
