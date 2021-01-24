@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 using UnityStandardAssets.Utility;
@@ -11,6 +12,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
     [RequireComponent(typeof (AudioSource))]
     public class FirstPersonController : MonoBehaviour
     {
+        public Transform CheckGround;
+        public float radiusCheckGround = 0.3f;
+        public LayerMask[] layerMaskFloor;
+        public List<StepSounds> typeFootstepSounds;
         [SerializeField] private bool m_IsWalking;
         [SerializeField] private float m_WalkSpeed;
         [SerializeField] private float m_RunSpeed;
@@ -130,7 +135,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
             ProgressStepCycle(speed);
             UpdateCameraPosition(speed);
-
+            SetFootStepAudio();
             m_MouseLook.UpdateCursorLock();
         }
 
@@ -140,13 +145,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_AudioSource.clip = m_JumpSound;
             m_AudioSource.Play();
         }
-
-
+                
         private void ProgressStepCycle(float speed)
         {
             if (m_CharacterController.velocity.sqrMagnitude > 0 && (m_Input.x != 0 || m_Input.y != 0))
             {
-                m_StepCycle += (m_CharacterController.velocity.magnitude + (speed*(m_IsWalking ? 1f : m_RunstepLenghten)))*
+                m_StepCycle += (m_CharacterController.velocity.magnitude + (speed * (m_IsWalking ? 1f : m_RunstepLenghten))) *
                              Time.fixedDeltaTime;
             }
 
@@ -159,7 +163,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
             PlayFootStepAudio();
         }
-
 
         private void PlayFootStepAudio()
         {
@@ -177,6 +180,41 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_FootstepSounds[0] = m_AudioSource.clip;
         }
 
+        void SetFootStepAudio()
+        {
+            if (!m_CharacterController.isGrounded)
+            {
+                return;
+            }
+                     
+            m_FootstepSounds = GetClip();            
+        }
+
+        AudioClip[] GetClip()
+        {
+            int index = 0;
+
+            for (int x = 0; x < layerMaskFloor.Length; x++)
+            {
+                index = CheckFloorType(x);                
+                if (index > -1)
+                    break;
+            }
+            
+            if (index < 0)
+                index = 0;
+            
+            return typeFootstepSounds[index].clips;
+        }
+        private void OnDrawGizmosSelected()
+        {
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawSphere(CheckGround.position, radiusCheckGround);
+        }
+        int CheckFloorType(int index)
+        {            
+            return Physics.CheckSphere(CheckGround.position, radiusCheckGround, layerMaskFloor[index]) ? index:-1;
+        }
 
         private void UpdateCameraPosition(float speed)
         {
@@ -200,7 +238,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
             m_Camera.transform.localPosition = newCameraPosition;
         }
-
 
         private void GetInput(out float speed)
         {
@@ -234,12 +271,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
         }
 
-
         private void RotateView()
         {
             m_MouseLook.LookRotation (transform, m_Camera.transform);
         }
-
 
         private void OnControllerColliderHit(ControllerColliderHit hit)
         {
@@ -256,5 +291,24 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
             body.AddForceAtPosition(m_CharacterController.velocity*0.1f, hit.point, ForceMode.Impulse);
         }
+    }
+    
+    
+}
+
+[Serializable]
+public class StepSounds
+{
+    public string name = "name";
+    public AudioClip[] clips;
+
+    public AudioClip GetClip(int index)
+    {
+        return clips[index];
+    }
+
+    public void SetClips(AudioClip[] values)
+    {
+        clips = values;
     }
 }
