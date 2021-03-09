@@ -1,0 +1,473 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8460753252737125480
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6c3b42562c09470ea31efe19c9d3dd9, type: 3}
+  m_Name: item.205300314
+  m_EditorClassIdentifier: 
+  uuid: 205300314
+  itemName:
+    content: key
+    postProcess: 0
+    translationID: 0
+  itemDescription:
+    content: para abrir puertas cerradas
+    postProcess: 0
+    translationID: 0
+  itemColor: {r: 0.44236386, g: 0.7169812, b: 0.6057891, a: 1}
+  sprite: {fileID: 21300000, guid: 8095149cbebcb4cbbbabb5873eaa7554, type: 3}
+  prefab: {fileID: 248185801603051644, guid: 6c8afb483ebe6014998c7305846178bc, type: 3}
+  canBeSold: 0
+  price: 1
+  maxStack: 99
+  weight: 0
+  itemTypes: 1
+  onClick: 1
+  consumeItem: 0
+  actionsOnClick: {fileID: 1585707197054468918, guid: e960c1112512bfb4fb6b00fa7f1e1edf, type: 3}
+  equipable: 0
+  fillAllTypes: 0
+  conditionsEquip: {fileID: 23782701067024109, guid: 1c9e947b5ad5c894f9b743ad9275540b, type: 3}
+  actionsOnEquip: {fileID: 4822260630050542143, guid: ab74867321781cd41928b084850e66a8, type: 3}
+  actionsOnUnequip: {fileID: 7854805784588958240, guid: 0bb461e93708bc245a0b78d8f1e0843b, type: 3}
+--- !u!114 &-8183835705044620331
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6c3b42562c09470ea31efe19c9d3dd9, type: 3}
+  m_Name: item.975241937
+  m_EditorClassIdentifier: 
+  uuid: 743890067
+  itemName:
+    content: NotaF
+    postProcess: 0
+    translationID: 0
+  itemDescription:
+    content: "informaci\xF3n que te ayuda a salir de la estaci\xF3n"
+    postProcess: 0
+    translationID: 0
+  itemColor: {r: 0.6792453, g: 0.63617975, b: 0.25247416, a: 1}
+  sprite: {fileID: 21300000, guid: 218821815ca444a89b9dc92e6baac98e, type: 3}
+  prefab: {fileID: 5826457280317158087, guid: 427b23dd662224c4a8e62eea63cd248a, type: 3}
+  canBeSold: 0
+  price: 1
+  maxStack: 99
+  weight: 0
+  itemTypes: 2
+  onClick: 1
+  consumeItem: 0
+  actionsOnClick: {fileID: 5174694893055653814, guid: 306c7b0838299bf43a7bcab79ad59e2f, type: 3}
+  equipable: 0
+  fillAllTypes: 0
+  conditionsEquip: {fileID: 5435351154686402655, guid: 9c25eaa88372e414ab78c8305509f1fc, type: 3}
+  actionsOnEquip: {fileID: 542422062402041742, guid: d06be26be3c9e7645afdaec871a93028, type: 3}
+  actionsOnUnequip: {fileID: 6434353863573865775, guid: 9eb75dbd5c13e204893a6d531ac1f097, type: 3}
+--- !u!114 &-3118100807245103911
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6c3b42562c09470ea31efe19c9d3dd9, type: 3}
+  m_Name: item.975241937
+  m_EditorClassIdentifier: 
+  uuid: 1905741404
+  itemName:
+    content: NotaC
+    postProcess: 0
+    translationID: 0
+  itemDescription:
+    content: "informaci\xF3n que te ayuda a salir de la estaci\xF3n"
+    postProcess: 0
+    translationID: 0
+  itemColor: {r: 0.6792453, g: 0.63617975, b: 0.25247416, a: 1}
+  sprite: {fileID: 21300000, guid: 218821815ca444a89b9dc92e6baac98e, type: 3}
+  prefab: {fileID: 5826457280317158087, guid: fa51f4db2bd2c9b4bb2743342ec89547, type: 3}
+  canBeSold: 0
+  price: 1
+  maxStack: 99
+  weight: 0
+  itemTypes: 2
+  onClick: 1
+  consumeItem: 0
+  actionsOnClick: {fileID: 5174694893055653814, guid: e49dbe0d98d8a0944a89c5ed7489426d, type: 3}
+  equipable: 0
+  fillAllTypes: 0
+  conditionsEquip: {fileID: 5435351154686402655, guid: 74a94be8aff22b240a155ebef69b5144, type: 3}
+  actionsOnEquip: {fileID: 542422062402041742, guid: 8e792949c65d89c4bb4c46d5953edba4, type: 3}
+  actionsOnUnequip: {fileID: 6434353863573865775, guid: fe6577f19a30c2141b06209343f11fe2, type: 3}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3e40ba9355f343dc9daa80cc6e5ef1f, type: 3}
+  m_Name: DatabaseInventory
+  m_EditorClassIdentifier: 
+  inventoryCatalogue:
+    items:
+    - {fileID: -8460753252737125480}
+    - {fileID: 4534236273937707328}
+    - {fileID: 6075553394217656295}
+    - {fileID: -3118100807245103911}
+    - {fileID: 2021762848538550756}
+    - {fileID: 3607263746405314327}
+    - {fileID: -8183835705044620331}
+    recipes: []
+    itemTypes:
+    - id: General/
+      name:
+        content: objects
+        postProcess: 0
+        translationID: 0
+    - id: General/
+      name:
+        content: notes
+        postProcess: 0
+        translationID: 0
+    - id: 
+      name:
+        content: 
+        postProcess: 0
+        translationID: 0
+    - id: 
+      name:
+        content: 
+        postProcess: 0
+        translationID: 0
+    - id: 
+      name:
+        content: 
+        postProcess: 0
+        translationID: 0
+    - id: 
+      name:
+        content: 
+        postProcess: 0
+        translationID: 0
+    - id: 
+      name:
+        content: 
+        postProcess: 0
+        translationID: 0
+    - id: 
+      name:
+        content: 
+        postProcess: 0
+        translationID: 0
+    - id: 
+      name:
+        content: 
+        postProcess: 0
+        translationID: 0
+    - id: 
+      name:
+        content: 
+        postProcess: 0
+        translationID: 0
+    - id: 
+      name:
+        content: 
+        postProcess: 0
+        translationID: 0
+    - id: 
+      name:
+        content: 
+        postProcess: 0
+        translationID: 0
+    - id: 
+      name:
+        content: 
+        postProcess: 0
+        translationID: 0
+    - id: 
+      name:
+        content: 
+        postProcess: 0
+        translationID: 0
+    - id: 
+      name:
+        content: 
+        postProcess: 0
+        translationID: 0
+    - id: 
+      name:
+        content: 
+        postProcess: 0
+        translationID: 0
+    - id: 
+      name:
+        content: 
+        postProcess: 0
+        translationID: 0
+    - id: 
+      name:
+        content: 
+        postProcess: 0
+        translationID: 0
+    - id: 
+      name:
+        content: 
+        postProcess: 0
+        translationID: 0
+    - id: 
+      name:
+        content: 
+        postProcess: 0
+        translationID: 0
+    - id: 
+      name:
+        content: 
+        postProcess: 0
+        translationID: 0
+    - id: 
+      name:
+        content: 
+        postProcess: 0
+        translationID: 0
+    - id: 
+      name:
+        content: 
+        postProcess: 0
+        translationID: 0
+    - id: 
+      name:
+        content: 
+        postProcess: 0
+        translationID: 0
+    - id: 
+      name:
+        content: 
+        postProcess: 0
+        translationID: 0
+    - id: 
+      name:
+        content: 
+        postProcess: 0
+        translationID: 0
+    - id: 
+      name:
+        content: 
+        postProcess: 0
+        translationID: 0
+    - id: 
+      name:
+        content: 
+        postProcess: 0
+        translationID: 0
+    - id: 
+      name:
+        content: 
+        postProcess: 0
+        translationID: 0
+    - id: 
+      name:
+        content: 
+        postProcess: 0
+        translationID: 0
+    - id: 
+      name:
+        content: 
+        postProcess: 0
+        translationID: 0
+    - id: 
+      name:
+        content: 
+        postProcess: 0
+        translationID: 0
+  inventorySettings:
+    merchantUIPrefab: {fileID: 0}
+    containerUIPrefab: {fileID: 0}
+    inventoryUIPrefab: {fileID: 2027598470825678693, guid: fede0ddc2579ff045b2553349e0ac60c, type: 3}
+    onDragGrabItem: 0
+    saveInventory: 1
+    cursorDrag: {fileID: 0}
+    cursorDragHotspot: {x: 0, y: 0}
+    dragItemsToCombine: 0
+    pauseTimeOnUI: 1
+    canDropItems: 1
+    dropItemMaxDistance: 2
+    limitInventoryWeight: 0
+    maxInventoryWeight:
+      optionIndex: 0
+      value: 100
+      global:
+        allowTypesMask: 4
+        name: 
+      local:
+        allowTypesMask: 4
+        name: 
+        targetType: 2
+        targetObject: {fileID: 0}
+      list:
+        targetType: 3
+        targetObject: {fileID: 0}
+        select: 1
+        index: 0
+--- !u!114 &2021762848538550756
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6c3b42562c09470ea31efe19c9d3dd9, type: 3}
+  m_Name: item.975241937
+  m_EditorClassIdentifier: 
+  uuid: 903315933
+  itemName:
+    content: NotaD
+    postProcess: 0
+    translationID: 0
+  itemDescription:
+    content: "informaci\xF3n que te ayuda a salir de la estaci\xF3n"
+    postProcess: 0
+    translationID: 0
+  itemColor: {r: 0.6792453, g: 0.63617975, b: 0.25247416, a: 1}
+  sprite: {fileID: 21300000, guid: 218821815ca444a89b9dc92e6baac98e, type: 3}
+  prefab: {fileID: 5826457280317158087, guid: 666be47833deb7c4087cb96d88e68f89, type: 3}
+  canBeSold: 0
+  price: 1
+  maxStack: 99
+  weight: 0
+  itemTypes: 2
+  onClick: 1
+  consumeItem: 0
+  actionsOnClick: {fileID: 5174694893055653814, guid: e91ffc26c761e864b84e076062e6e1d0, type: 3}
+  equipable: 0
+  fillAllTypes: 0
+  conditionsEquip: {fileID: 5435351154686402655, guid: d8af6a2f338948f43a06a8a4c5a32638, type: 3}
+  actionsOnEquip: {fileID: 542422062402041742, guid: 0e3a582f7797bf34887907f9815327b5, type: 3}
+  actionsOnUnequip: {fileID: 6434353863573865775, guid: e345cf2cdb094744b83f9b729d99037e, type: 3}
+--- !u!114 &3607263746405314327
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6c3b42562c09470ea31efe19c9d3dd9, type: 3}
+  m_Name: item.975241937
+  m_EditorClassIdentifier: 
+  uuid: 262046118
+  itemName:
+    content: NotaE
+    postProcess: 0
+    translationID: 0
+  itemDescription:
+    content: "informaci\xF3n que te ayuda a salir de la estaci\xF3n"
+    postProcess: 0
+    translationID: 0
+  itemColor: {r: 0.6792453, g: 0.63617975, b: 0.25247416, a: 1}
+  sprite: {fileID: 21300000, guid: 218821815ca444a89b9dc92e6baac98e, type: 3}
+  prefab: {fileID: 5826457280317158087, guid: 868c852ea6e007b4dbe24c81f06e857c, type: 3}
+  canBeSold: 0
+  price: 1
+  maxStack: 99
+  weight: 0
+  itemTypes: 2
+  onClick: 1
+  consumeItem: 0
+  actionsOnClick: {fileID: 5174694893055653814, guid: e009e0619b1571f4cb2ae5860bf9f33c, type: 3}
+  equipable: 0
+  fillAllTypes: 0
+  conditionsEquip: {fileID: 5435351154686402655, guid: 31d7d739c393e0a488afde4519981c9b, type: 3}
+  actionsOnEquip: {fileID: 542422062402041742, guid: 6e901c38585c9ed48bba228a09ccc7be, type: 3}
+  actionsOnUnequip: {fileID: 6434353863573865775, guid: 36089c34c5f9591408f94c1d6989eac1, type: 3}
+--- !u!114 &4534236273937707328
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6c3b42562c09470ea31efe19c9d3dd9, type: 3}
+  m_Name: item.975241937
+  m_EditorClassIdentifier: 
+  uuid: 975241937
+  itemName:
+    content: NotaA
+    postProcess: 0
+    translationID: 0
+  itemDescription:
+    content: "informaci\xF3n que te ayuda a salir de la estaci\xF3n"
+    postProcess: 0
+    translationID: 0
+  itemColor: {r: 0.6792453, g: 0.63617975, b: 0.25247416, a: 1}
+  sprite: {fileID: 21300000, guid: 218821815ca444a89b9dc92e6baac98e, type: 3}
+  prefab: {fileID: 5826457280317158087, guid: 92616a5a1ddcb3e4a80cbc2ea351933e, type: 3}
+  canBeSold: 0
+  price: 1
+  maxStack: 99
+  weight: 0
+  itemTypes: 2
+  onClick: 1
+  consumeItem: 0
+  actionsOnClick: {fileID: 5174694893055653814, guid: 69435865ab000f343b0a1850dd312de7, type: 3}
+  equipable: 0
+  fillAllTypes: 0
+  conditionsEquip: {fileID: 5435351154686402655, guid: d56037bcc475e504aa279dd0d28e5bbd, type: 3}
+  actionsOnEquip: {fileID: 542422062402041742, guid: 08a22be9fc10afa49a63c76b73b346d1, type: 3}
+  actionsOnUnequip: {fileID: 6434353863573865775, guid: bbbe67e30753bf04dbe0658e4a1c7898, type: 3}
+--- !u!114 &6075553394217656295
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6c3b42562c09470ea31efe19c9d3dd9, type: 3}
+  m_Name: item.975241937
+  m_EditorClassIdentifier: 
+  uuid: 315275104
+  itemName:
+    content: NotaB
+    postProcess: 0
+    translationID: 0
+  itemDescription:
+    content: "informaci\xF3n que te ayuda a salir de la estaci\xF3n"
+    postProcess: 0
+    translationID: 0
+  itemColor: {r: 0.6792453, g: 0.63617975, b: 0.25247416, a: 1}
+  sprite: {fileID: 21300000, guid: 218821815ca444a89b9dc92e6baac98e, type: 3}
+  prefab: {fileID: 5826457280317158087, guid: 579e8113d3f10cd4c96ba850ff884082, type: 3}
+  canBeSold: 0
+  price: 1
+  maxStack: 99
+  weight: 0
+  itemTypes: 2
+  onClick: 1
+  consumeItem: 0
+  actionsOnClick: {fileID: 5174694893055653814, guid: c7395e691f036204baf144463f5bb7f6, type: 3}
+  equipable: 0
+  fillAllTypes: 0
+  conditionsEquip: {fileID: 5435351154686402655, guid: 42ea78cc51334a140a89e44a8c3cc47a, type: 3}
+  actionsOnEquip: {fileID: 542422062402041742, guid: 7307fbfdf99e74a4698a8de339f0376a, type: 3}
+  actionsOnUnequip: {fileID: 6434353863573865775, guid: 71aa8dc8f705c184d86f588b437d2bdd, type: 3}

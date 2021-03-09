@@ -1,0 +1,5 @@
+Los finales del tunel y la escalera desactivan el character controller del player 
+para solucionar un bug que hay que teletransporta 2 veces al player dejandolo al final en la misma posición que estaba antes
+Para activar nuevamente el character controller usamos el trigger ActiveCharacterController
+
+--una posible solucion no probada es poner el TImeScale en 0 justo antes de reposicionar el player y luego volver a 1 el timescale
