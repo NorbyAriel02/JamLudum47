@@ -71,3 +71,7 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 Pasco/Temp/UnityLockfile
 Pasco/Library/ArtifactDB
+*.meta
+*.meta
+*.meta
+Pasco/Assets/Animations/Tren.meta

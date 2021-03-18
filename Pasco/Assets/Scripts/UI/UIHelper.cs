@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class UIHelper : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject timeScale;
     void Start()
     {
         Cursor.visible = false;
@@ -18,30 +18,12 @@ public class UIHelper : MonoBehaviour
 
     public static void UIOpen()
     {
-        //GameObject.
-        //        FindGameObjectWithTag("Player").
-        //        GetComponent<GameCreator.Characters.PlayerCharacter>()
-        //        .enabled = false;
-        //GameObject.
-        //    FindGameObjectWithTag("MainCamera").
-        //    GetComponent<GameCreator.Camera.CameraController>()
-        //    .enabled = false;
-        Time.timeScale = 0;
         Cursor.visible = true;
     }
 
-    public static void UIClose()
+    public static void UIClose(GameObject timeScale)
     {
-        //GameObject.
-        //        FindGameObjectWithTag("Player").
-        //        GetComponent<GameCreator.Characters.PlayerCharacter>()
-        //        .enabled = true;
-        //GameObject.
-        //    FindGameObjectWithTag("MainCamera").
-        //    GetComponent<GameCreator.Camera.CameraController>()
-        //    .enabled = true;
-        Time.timeScale = 1;
-        Cursor.visible = false;
+        Instantiate(timeScale);
     }
 
     public void SetTextNote(string value)

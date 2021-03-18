@@ -17,7 +17,7 @@ public class UIController : MonoBehaviour
 
     private void OnDisable()
     {
-        UIHelper.UIClose();
+        UIHelper.UIClose(null);
     }
     public void Exit()
     {

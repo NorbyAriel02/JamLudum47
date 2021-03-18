@@ -66,6 +66,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61da2fb47ff396a4d8124ca7a9c94c1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeScale: {fileID: 6012066209234315468, guid: e80186dd9ce6a0c4ca8926cd219e70ec, type: 3}
 --- !u!114 &7835315827131491728
 MonoBehaviour:
   m_ObjectHideFlags: 0

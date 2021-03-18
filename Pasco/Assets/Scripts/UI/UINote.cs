@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class UINote : MonoBehaviour
 {
+    public GameObject timeScale;
     public string text;
     public Text txtNote;
     private void Start()
@@ -16,11 +17,13 @@ public class UINote : MonoBehaviour
     }
     private void OnDisable()
     {
-        UIHelper.UIClose();
+        UIHelper.UIClose(timeScale);
     }
     public void Exit()
     {
-        gameObject.SetActive(false);
+        UIHelper.UIClose(timeScale);
+        Cursor.visible = false;
+        Destroy(gameObject);        
     }
 
 }
