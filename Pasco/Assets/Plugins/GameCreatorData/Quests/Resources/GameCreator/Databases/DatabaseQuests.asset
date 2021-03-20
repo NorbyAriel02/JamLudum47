@@ -27,9 +27,9 @@ MonoBehaviour:
     questsHUDSkin: {fileID: 0}
   questsTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c0690000
-    m_LastClickedID: 27072
-    m_ExpandedIDs: e6f9f8ff66faf8ffc6fef8ff00000000ac6a0000ae6a0000406b0000426b0000
+    m_SelectedIDs: 6ab4ffff
+    m_LastClickedID: -19350
+    m_ExpandedIDs: e6f9f8ff66faf8ffc6fef8ff0000000012640000ac6a0000ae6a0000406b0000426b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

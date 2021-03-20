@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - UICONTROL
+  - EYES
+  - Hand
+  - LOADSCENE
+  - TRAIN
+  - NOTE
   layers:
   - Default
   - TransparentFX
@@ -13,10 +19,17 @@ TagManager:
   - UI
   - 
   - 
+<<<<<<< Updated upstream
   - 
   - 
   - 
   - 
+=======
+  - PostProcessing
+  - CementFloor
+  - MetalicFloor
+  - Ladder
+>>>>>>> Stashed changes
   - 
   - 
   - 

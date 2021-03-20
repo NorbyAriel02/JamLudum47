@@ -206,7 +206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isExpanded: 1
-  quest: {fileID: -6709476008056718222, guid: 9b1eee8c3303e5144a1474207f2c3bf2, type: 2}
+  quest: {fileID: -2796902809181818276, guid: 9b1eee8c3303e5144a1474207f2c3bf2, type: 2}
   status: 2
 --- !u!114 &5396447054854806581
 MonoBehaviour:
