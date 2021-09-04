@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6739688090330089035}
   - component: {fileID: 4619889441644032316}
   - component: {fileID: 8066528705677168375}
+  - component: {fileID: -3560822768144666101}
   m_Layer: 0
   m_Name: 058f76302fab465f8f9a4f450d35d01d
   m_TagString: Untagged
@@ -45,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ed1d9880e2ba45b0b16d09f57c5b9b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conditions: {fileID: 0}
+  conditions: {fileID: -3560822768144666101}
   onComplete: {fileID: 4619889441644032316}
   onFail: {fileID: 0}
 --- !u!114 &4619889441644032316
@@ -79,3 +80,16 @@ MonoBehaviour:
   isExpanded: 1
   quest: {fileID: 8420692041068871554, guid: 9b1eee8c3303e5144a1474207f2c3bf2, type: 2}
   status: 1
+--- !u!114 &-3560822768144666101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3074663237045225815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88544633e6f13414a9c20d38b5cb10a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conditions: []

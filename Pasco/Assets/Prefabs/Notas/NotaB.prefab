@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 5396447054854806581}
   - component: {fileID: -5320597452864159540}
   - component: {fileID: -9194262059865802563}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: NotaB
   m_TagString: Untagged
   m_Icon: {fileID: 0}

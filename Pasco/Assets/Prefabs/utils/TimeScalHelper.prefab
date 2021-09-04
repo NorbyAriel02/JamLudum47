@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1617741280270258727}
   - component: {fileID: 4001848919810989788}
   - component: {fileID: 4799266721050244729}
+  - component: {fileID: 8239243971645992374}
   m_Layer: 0
   m_Name: TimeScalHelper
   m_TagString: Untagged
@@ -104,6 +105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actions:
   - {fileID: 4799266721050244729}
+  - {fileID: 8239243971645992374}
   executingIndex: -1
   isExecuting: 0
 --- !u!114 &4799266721050244729
@@ -135,3 +137,38 @@ MonoBehaviour:
       targetObject: {fileID: 0}
       select: 1
       index: 0
+--- !u!114 &8239243971645992374
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6012066209234315468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31290190a2eb745199f61cb7903f4a60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExpanded: 0
+  changeTexture: 0
+  texture:
+    optionIndex: 0
+    value: {fileID: 0}
+    global:
+      allowTypesMask: 128
+      name: 
+    local:
+      allowTypesMask: 128
+      name: 
+      targetType: 2
+      targetObject: {fileID: 0}
+    list:
+      targetType: 3
+      targetObject: {fileID: 0}
+      select: 1
+      index: 0
+  hotspot: {x: 0, y: 0}
+  changeCursorLock: 0
+  cursorLockMode: 0
+  changeVisibility: 1
+  isVisible: 0

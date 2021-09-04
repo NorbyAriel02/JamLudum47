@@ -45,7 +45,6 @@ GameObject:
   - component: {fileID: 4596174842847896106}
   - component: {fileID: 4596174842847896119}
   - component: {fileID: 4819959528403063679}
-  - component: {fileID: 1416473336}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -235,86 +234,6 @@ MonoBehaviour:
   keyDown: 115
   speed: 3
 --- !u!114 &4819959528403063679
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4596174842847896109}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d1a1bad10d7340b28594393bc102fe3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gid: 9fa1c05d-ff97-4eff-9707-fd1b8fd859fd
-  equipment:
-    items:
-    - isEquipped: 0
-      itemID: 0
-    - isEquipped: 0
-      itemID: 0
-    - isEquipped: 0
-      itemID: 0
-    - isEquipped: 0
-      itemID: 0
-    - isEquipped: 0
-      itemID: 0
-    - isEquipped: 0
-      itemID: 0
-    - isEquipped: 0
-      itemID: 0
-    - isEquipped: 0
-      itemID: 0
-    - isEquipped: 0
-      itemID: 0
-    - isEquipped: 0
-      itemID: 0
-    - isEquipped: 0
-      itemID: 0
-    - isEquipped: 0
-      itemID: 0
-    - isEquipped: 0
-      itemID: 0
-    - isEquipped: 0
-      itemID: 0
-    - isEquipped: 0
-      itemID: 0
-    - isEquipped: 0
-      itemID: 0
-    - isEquipped: 0
-      itemID: 0
-    - isEquipped: 0
-      itemID: 0
-    - isEquipped: 0
-      itemID: 0
-    - isEquipped: 0
-      itemID: 0
-    - isEquipped: 0
-      itemID: 0
-    - isEquipped: 0
-      itemID: 0
-    - isEquipped: 0
-      itemID: 0
-    - isEquipped: 0
-      itemID: 0
-    - isEquipped: 0
-      itemID: 0
-    - isEquipped: 0
-      itemID: 0
-    - isEquipped: 0
-      itemID: 0
-    - isEquipped: 0
-      itemID: 0
-    - isEquipped: 0
-      itemID: 0
-    - isEquipped: 0
-      itemID: 0
-    - isEquipped: 0
-      itemID: 0
-    - isEquipped: 0
-      itemID: 0
-  saveEquipment: 1
---- !u!114 &1416473336
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

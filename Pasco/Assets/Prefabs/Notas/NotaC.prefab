@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 5396447054854806581}
   - component: {fileID: -7557541162036461908}
   - component: {fileID: -940081182822488802}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: NotaC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
